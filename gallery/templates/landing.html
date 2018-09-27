@@ -1,1 +1,12 @@
-<h1>Welcome to pictorial</h1>
+{% load bootstrap4 %}
+{% block styles %}
+    {% bootstrap_css %}
+{% endblock %}
+<h1 class="text-center">Welcome to pictorial</h1>
+
+{%block content%}
+{% block scripts %}
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+     {% bootstrap_javascript %}
+    {% endblock %}
+{%endblock%}
