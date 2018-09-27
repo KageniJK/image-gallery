@@ -89,6 +89,7 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+img-gall/
 
 # Spyder project settings
 .spyderproject
