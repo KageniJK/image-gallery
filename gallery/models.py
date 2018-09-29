@@ -28,6 +28,11 @@ class Category(models.Model):
     def save_category(self):
         self.save()
 
+    @classmethod
+    def search_category(cls, search_term):
+        # returns a searched image by category
+        return cls.objects.filter(category__icontains=search_term)
+
 
 class Picture(models.Model):
     """
@@ -62,15 +67,14 @@ class Picture(models.Model):
         return cls.objects.filter(id=id)
 
     @classmethod
-    def search_picture(cls, search_term):
-        # returns a searched image by category
-        pics = cls.objects.filter(name__icontains=search_term)
-        return pics
-
-    @classmethod
     def filter_by_loc(cls,location):
         # returns all the pictures from a specific location
         return cls.objects.filter(location=location)
+
+    @classmethod
+    def filter_by_cat(cls, category):
+        # returns all the pictures from a specific location
+        return cls.objects.filter(category=category)
 
     @classmethod
     def all_pics(cls):

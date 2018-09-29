@@ -10,4 +10,4 @@ class PictureTestClass(TestCase):
 
     def setUp(self):
         #setting up instance
-        self.one = Picture(name = 'today', )
+        self.one = Picture(name='today', )

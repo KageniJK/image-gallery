@@ -3,20 +3,21 @@
 <div class="container">
 
   <div class="row">
-    {% if pics%}
-      <h2>Found {{ pics|length }} of searched term {{message}}</h2>
+    {% if cats%}
+      <h2>Found {{ cats|length }} of searched term {{message}}</h2>
     {% else %}
-      <h2> Found 0 pictures for the search term {{message}}</h2>
+      <h2> Found 0 categories for the search term {{message}}</h2>
     {% endif %}
 
   </div>
 
   <div class="row">
 
-  {% if pics %}
-    {% for pic in pics %}
+  {% if cats %}
+    {% for cat in cats %}
       <div class="col-sm-6 col-md-3">
-          <h1>{{pic.name}}</h1>
+        <a href="{% url 'category' cat.id%}"><h1>{{cat.category}}</h1></a>
+
       </div>
     {% endfor %}
   {% endif %}
