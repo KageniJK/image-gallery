@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ebbce09b-f3cf-4776-9ae8-5bf0e34292ec" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gallery/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/../gallery/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gallery/templates/landing.html" beforeDir="false" afterPath="$PROJECT_DIR$/../gallery/templates/landing.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gallery/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/../gallery/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gallery/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/../gallery/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gallery/templates/navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/../gallery/templates/navbar.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -62,13 +59,13 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="html" value="211" />
+          <entry key="html" value="300" />
           <entry key="py" value="1246" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="211" />
+          <entry key="HTML" value="300" />
           <entry key="Python" value="1246" />
         </counts>
       </usages-collector>
@@ -174,16 +171,16 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../gallery/templates/navbar.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="79" selection-start-line="20" selection-start-column="79" selection-end-line="20" selection-end-column="79" />
+            <state relative-caret-position="476">
+              <caret line="28" column="73" selection-start-line="28" selection-start-column="73" selection-end-line="28" selection-end-column="73" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../gallery/templates/search.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="306">
@@ -234,8 +231,8 @@
         <option value="$PROJECT_DIR$/../gallery/models.py" />
         <option value="$PROJECT_DIR$/../gallery/templates/base.html" />
         <option value="$PROJECT_DIR$/../gallery/views.py" />
-        <option value="$PROJECT_DIR$/../gallery/templates/navbar.html" />
         <option value="$PROJECT_DIR$/../gallery/templates/search.html" />
+        <option value="$PROJECT_DIR$/../gallery/templates/navbar.html" />
       </list>
     </option>
   </component>
@@ -377,20 +374,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../gallery/templates/landing.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../gallery/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../gallery/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -458,17 +441,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../gallery/templates/navbar.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="79" selection-start-line="20" selection-start-column="79" selection-end-line="20" selection-end-column="79" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../gallery/templates/search.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="18" column="24" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gallery/templates/landing.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gallery/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gallery/templates/navbar.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="28" column="73" selection-start-line="28" selection-start-column="73" selection-end-line="28" selection-end-column="73" />
         </state>
       </provider>
     </entry>
