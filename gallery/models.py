@@ -70,3 +70,8 @@ class Picture(models.Model):
     def filter_by_loc(cls,location):
         # returns all the pictures from a specific location
         return cls.objects.filter(location=location)
+
+    @classmethod
+    def all_pics(cls):
+        # gets all the pictures
+        return cls.objects.all()
