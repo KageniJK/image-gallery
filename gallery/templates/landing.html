@@ -1,22 +1,40 @@
 {% extends 'base.html'%}
-
-<h1 class="text-center">Welcome to pictorial</h1>
-
 {%block content%}
-{% for pic in pics%}
-<div class="row">
-        <!--Displaying the pictures-->
-        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-            <h2 class="text-center">{{ pic.name }}</h2>
-        </div>
-        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-            <img src="{{pic.image.url}}" class="img-responsive" alt="Image">
-        </div>
-
-    </div>
- {% empty %}
+<h1 class="text-center">Welcome to pictorial</h1>
+<div class="container">
   <div class="row">
-    <h2 class="text-center">There are No Pictures</h2>
+    {% for pic in pics%}
+    <!--Displaying the pictures-->
+    <div class="card col-xs-4 col-sm-4 col-md-4 col-lg-4" style="width: 18rem;">
+      <img class="card-img-top" src="{{pic.image.url}}" alt="Image" data-toggle="modal" data-target="#exampleModal">
+      <div class="card-body">
+        <h5 class="card-title">{{pic.name}}</h5>
+      </div>
+    </div>
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+          </div>
+          <div class="modal-body">
+              <img src="{{pic.image.url}}" alt="{{pic.name}}">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    {% empty %}
+    <div class="row">
+      <h2 class="text-center">There are No Pictures</h2>
+    </div>
+    {% endfor %}
   </div>
-{% endfor %}
+</div>
 {%endblock%}
