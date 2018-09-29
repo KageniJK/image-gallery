@@ -79,4 +79,4 @@ class Picture(models.Model):
     @classmethod
     def all_pics(cls):
         # gets all the pictures
-        return cls.objects.all()
+        return cls.objects.all().order_by('-id')

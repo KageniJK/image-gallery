@@ -13,7 +13,7 @@
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <h5 class="modal-title" id="exampleModalLabel">{{pic.name}}</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -22,6 +22,9 @@
               <img src="{{pic.image.url}}" alt="{{pic.name}}">
           </div>
           <div class="modal-footer">
+            <input class="form-control" type="text" value="https://pictorial.herokuapp.com{{pic.image.url}}">
+                <button  type="button" value="https://pictorial.herokuapp.com{{pic.image.url}}"  onclick="copyLink(this.value)"
+                         class="btn btn-outline-secondary my-2 my-sm-0 link-btn">Copy Photo Link</button>
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
 
           </div>
