@@ -1,12 +1,22 @@
-{% load bootstrap4 %}
-{% block styles %}
-    {% bootstrap_css %}
-{% endblock %}
+{% extends 'base.html'%}
+
 <h1 class="text-center">Welcome to pictorial</h1>
 
 {%block content%}
-{% block scripts %}
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-     {% bootstrap_javascript %}
-    {% endblock %}
+{% for pic in pics%}
+<div class="row">
+        <!--Displaying the pictures-->
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+            <h2 class="text-center">{{ pic.name }}</h2>
+        </div>
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+            <img src="{{pic.image.url}}" class="img-responsive" alt="Image">
+        </div>
+
+    </div>
+ {% empty %}
+  <div class="row">
+    <h2 class="text-center">There are No Pictures</h2>
+  </div>
+{% endfor %}
 {%endblock%}
