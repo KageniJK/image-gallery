@@ -22,6 +22,8 @@
               <img src="{{pic.image.url}}" alt="{{pic.name}}">
           </div>
           <div class="modal-footer">
+            <button  type="button" value="https://hall-of-james.herokuapp.com{{pic.image.url}}"  onclick="copyLink(this.value)"
+                         class="btn btn-outline-secondary my-2 my-sm-0 link-btn"><i class="far fa-copy"></i> Copy link</button>
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
 
           </div>
